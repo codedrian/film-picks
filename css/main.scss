@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,700;0,800;1,400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;800&display=swap');
 
-@mixin font-style {
-    font-family: 'Nunito Sans';
+@mixin ns-heading {
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     font-size: 3rem;
+}
+@mixin ns-body-font {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 2rem;
 }
 
 $main-color: #284440;
@@ -67,47 +73,118 @@ body {
         .content-wrapper {
             width: 850px;
             margin: 0 auto;
-            h1{
+            h1 {
                 border-bottom: 2px solid $white-color;
                 padding: 0 0 20px 0;
-                @include font-style;
+                @include ns-heading;
+
                 }
-                p {
-                    font-size: 1.8rem;
-                    font-family: 'Nunito Sans', sans-serif;
-                    margin-bottom: 26px;
-                    line-height: 2rem;
-                    padding: 15px;
-                }
-                p:nth-child(4) {
-                    border-bottom: 2px solid $white-color;
-                }
+            p {
+                @include ns-body-font;
+                margin-bottom: 26px;
+                padding: 15px;
+            }
+            p:nth-child(4) {
+                border-bottom: 2px solid $white-color;
+            }
         }
     }
     .categories {
-        width: 90%;
-        margin: 0 auto;
-        h1 {
-            @include font-style;
-            color: red;
-        }
-        .categories-content {
-            width: 850px;
+        margin-top:200px;
+        .categories-container {
+            width: 90%;
             margin: 0 auto;
+            color: $white-color;
+            h1 {
+                @include ns-heading;
+                margin-bottom: 40px;
+            }
+            .categories-content {
+                width: 85%;
+                margin: 0 auto;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    li {
+                        width: 50%;
+                        border-top: 1px solid $white-color;
+                        border-bottom: 1px solid $white-color;
+                        padding: 10px ;
+                        a {
+                            text-decoration: none;
+                            color: $white-color;
+                            font-size: 1rem;
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 700;
+                            letter-spacing: 0.2rem;
+                        }
+                        a:hover {
+                            color: black;
+                        }
 
-            ul {
-                list-style: none;
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                li {
-                    width: 50%;
-                    border-bottom: 2px solid $white-color;
-                    a {
-                        text-decoration: none;
-                        color: $white-color;
                     }
                 }
+            }
+            .footnote {
+                width: 50%;
+                font-family: 'Times New Roman', sans-serif;
+                font-weight: 700;
+                font-style: italic;
+                font-size: 1.2rem;
+                margin-top: 50px;
+            }
+        }
+    }
+    .highest-rated {
+        margin-top: 200px;
+        .highest-rated-container {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 110px;
+            padding-bottom: 110px;
+            .highest-rated-content {
+                width: 85%;
+                margin: 0 auto;
+                text-align: center;
+                color: $white-color;
+                h1 {
+                @include ns-heading;
+                }
+                p {
+                    @include ns-body-font;
+                    margin-bottom: 26px;
+                    padding: 5px;
+                }
+                .footnote {
+                    font-family: 'Times New Roman', sans-serif;
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .top-rated-1 {
+        padding-top: 110px;
+
+        .top-rated-container-1 {
+            margin: 0 auto;
+            background-color: red;
+            width: 90%;
+            .video-container {
+                width: 100%;
+                video {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
+            .top-rated-content-1 {
+                width: 85%;
+                margin: 0 auto;
+                color: $white-color;
             }
         }
     }
