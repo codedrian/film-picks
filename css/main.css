@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,700;0,800;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid black;
 }
 
 body {
@@ -58,45 +59,213 @@ body .year-text-content .content-wrapper {
 body .year-text-content .content-wrapper h1 {
   border-bottom: 2px solid #ffffff;
   padding: 0 0 20px 0;
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 3rem;
 }
 body .year-text-content .content-wrapper p {
-  font-size: 1.8rem;
   font-family: "Nunito Sans", sans-serif;
-  margin-bottom: 26px;
+  font-weight: 200;
+  font-size: 1.8rem;
   line-height: 2rem;
+  margin-bottom: 26px;
   padding: 15px;
 }
 body .year-text-content .content-wrapper p:nth-child(4) {
   border-bottom: 2px solid #ffffff;
 }
 body .categories {
+  margin-top: 200px;
+}
+body .categories .categories-container {
   width: 90%;
   margin: 0 auto;
+  color: #ffffff;
 }
-body .categories h1 {
-  font-family: "Nunito Sans";
+body .categories .categories-container h1 {
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 3rem;
-  color: red;
+  margin-bottom: 40px;
 }
-body .categories .categories-content {
-  width: 850px;
+body .categories .categories-container .categories-content {
+  width: 85%;
   margin: 0 auto;
 }
-body .categories .categories-content ul {
+body .categories .categories-container .categories-content ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-body .categories .categories-content ul li {
+body .categories .categories-container .categories-content ul li {
   width: 50%;
-  border-bottom: 2px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
 }
-body .categories .categories-content ul li a {
+body .categories .categories-container .categories-content ul li a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+body .categories .categories-container .categories-content ul li a:hover {
+  color: black;
+}
+body .categories .categories-container .footnote {
+  width: 50%;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+body .highest-rated {
+  margin-top: 200px;
+}
+body .highest-rated .highest-rated-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+body .highest-rated .highest-rated-container .highest-rated-content {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+body .highest-rated .highest-rated-container .highest-rated-content h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+body .highest-rated .highest-rated-container .highest-rated-content p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 26px;
+  padding: 5px;
+}
+body .highest-rated .highest-rated-container .highest-rated-content .footnote {
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+body .top-rated {
+  margin-top: 110px;
+}
+body .top-rated .top-rated-container {
+  margin: 0 auto;
+  width: 90%;
+}
+body .top-rated .top-rated-container video {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .top-rated .top-rated-container .top-rated-content {
+  width: 55%;
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  bottom: 40px;
+  z-index: 1;
+  margin-left: 70px;
+}
+body .top-rated .top-rated-container .top-rated-content h1 {
+  font-family: "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .top-rated .top-rated-container .top-rated-content h1 span:nth-child(1) {
+  display: inline-block;
+}
+body .top-rated .top-rated-container img {
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  position: relative;
+  bottom: 40px;
+  z-index: 1;
+  margin-left: 60px;
+}
+body .top-rated-overall {
+  margin-top: 110px;
+}
+body .top-rated-overall .top-rated-container {
+  margin: 0 auto;
+  width: 90%;
+}
+body .top-rated-overall .top-rated-container p {
+  text-align: center;
+}
+body .top-rated-documentary {
+  margin-top: 110px;
+}
+body .top-rated-documentary .top-rated-container {
+  margin: 0 auto;
+  width: 90%;
+}
+body .top-rated-documentary .top-rated-container video {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .top-rated-documentary .top-rated-container .top-rated-documentary-content {
+  width: 40%;
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  bottom: 40px;
+  z-index: 1;
+  margin-left: 70px;
+}
+body .top-rated-documentary .top-rated-container .top-rated-documentary-content h1 {
+  font-family: "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .top-rated-documentary .top-rated-container .top-rated-documentary-content h1 span:nth-child(1) {
+  display: inline-block;
+}
+body .top-rated-documentary .top-rated-container .international-feature-list {
+  width: auto;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  bottom: 40px;
+  z-index: 1;
+  margin-left: 60px;
+  text-align: center;
+}
+body .top-rated-documentary .top-rated-container .international-feature-list .international-feature-grid {
+  width: 100%;
+  height: inherit;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+}
+body .top-rated-documentary .top-rated-container .international-feature-list .international-feature-grid .item {
+  width: 100px;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
