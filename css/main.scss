@@ -225,7 +225,7 @@ body {
 
         }
     }
-    .top-rated-documentary {
+    .top-rated-category {
         margin-top: 110px;
         .top-rated-container {
             margin: 0 auto;
@@ -238,7 +238,7 @@ body {
                 object-fit: cover;
             }
 
-            .top-rated-documentary-content {
+            .top-rated-category-content {
                 width: 40%;
                 display: inline-block;
                 color: $white-color;
@@ -252,6 +252,7 @@ body {
                     font-weight: 900;
                     font-size: 3.5rem;
                     width: fit-content;
+                    line-height: 3.3rem;
 
                     span:nth-child(1) {
                         display: inline-block;
@@ -261,7 +262,7 @@ body {
             }
             .international-feature-list {
                 width: auto;
-                height: 300px;
+                height: auto;
                 display: inline-block;
                 vertical-align: top;
                 position: relative;
@@ -270,23 +271,39 @@ body {
                 margin-left: 60px;
                 text-align: center;
 
-                .international-feature-grid {
+
+                .international-feature-grid-top {
                     width: 100%;
-                    height: inherit;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-content: center;
+                    column-gap: 1rem;
+                    margin-bottom: 1rem;
+                    .item {
+                        width: 110px;
+                        height: auto;
+                        border-radius: 9px;
+                    }
+                }
+                .international-feature-grid-bottom {
+                    width: 100%;
+                    height: auto;
                     display: grid;
                     grid-template-columns: repeat(5, 1fr);
-
-                    grid-template-rows: repeat(2, 1fr);
                     justify-content: center;
+
                     .item {
-                        width: 100px;
+                        width: 80px;
                         height: auto;
+                        border-radius: 9px;
                     }
 
                 }
             }
         }
     }
+
 
 
 
